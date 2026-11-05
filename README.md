@@ -228,6 +228,24 @@
 
 > 🤖 **AI 활용:** 만화 그림, 작동 원리 그림, 기대 효과 그래프는 AI를 활용해 제작했습니다.
 
+---
+
+##### 🎨 미래 장면 그림 (시각화)
+
+<!-- 이미지 경로: ./assets/future_scene.png (저장소의 assets 폴더에 업로드된 이미지) -->
+<p align="center">
+  <img src="./assets/future_scene.png" alt="미래 장면 시각화 - 제로콜(Zero-Call)" width="800"/>
+</p>
+
+> 🖼️ **장면 설명:** 2040년의 사무실에서 30대 직장인이 스마트폰이나 키보드를 전혀 만지지 않고 편하게 커피를 마시고 있다. 그동안 쓰고 있는 스마트 안경과 눈앞에 떠 있는 투명한 화면이 상황을 알아서 파악해 일정을 정리하고, 필요한 문서를 요약해서 보여 준다.
+
+🪄 **이미지를 만들 때 AI에게 입력한 문장 (원문)**
+
+```text
+A futuristic smart office in 2040, a 30-year-old Korean office worker sitting comfortably drinking coffee without touching any smartphone or keyboard, wearing subtle smart glasses, transparent holographic UI floating gently in mid-air automatically organizing schedules and documents by reading the user's context, warm and bright natural lighting, soft blue and white tones, cinematic 3D rendering --no typing, holding smartphone, dark dystopian robot
+```
+
+
 <!-- 활동 사진 추가 예시 -->
 <img src="https://pixnio.com/free-images/2017/08/14/2017-08-14-13-09-09-960x651.jpg?text=활동사진1" width="330" height="190"/>
 <img src="https://pixnio.com/free-images/2017/08/14/2017-08-14-20-51-02-960x640.jpg?text=활동사진2" width="330" height="190"/>
