@@ -137,6 +137,11 @@
 >
 > 2050 FUTURE LIVING · 2050년 미래 시나리오 · 개념 제안 · 구현 및 성능 검증 전
 
+<p align="center">
+  <a href="https://kookmin-sw.github.io/E26-AI01-19/presentation/"><img src="https://img.shields.io/badge/Zero--Call-%EB%B0%9C%ED%91%9C%EC%9A%A9%20%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0%20%E2%86%92-007E80?style=for-the-badge&labelColor=132E39" alt="Zero-Call 발표용 웹사이트 바로가기" height="40"/></a>
+</p>
+<p align="center"><sub>🖥️ 포스터 내용을 그대로 옮긴 발표용 웹페이지 · 키보드 <kbd>→</kbd> / <kbd>Space</kbd>로 넘기며 발표할 수 있어요</sub></p>
+
 ---
 
 ##### 🖼️ 포스터
