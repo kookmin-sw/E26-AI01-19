@@ -22,6 +22,12 @@
       <p class="hero__subtitle">말하지 않아도 나를 이해하는 집</p>
       <p class="hero__lead">아침부터 저녁까지, 사용자 생활의 흐름을 읽고 필요한 순간을 먼저 준비하는 가정 AI</p>
       <p class="hero__meta">2050년 미래 시나리오 · 개념 제안 · 구현 및 성능 검증 전</p>
+      <ol class="hero__agenda" aria-label="발표 순서">
+        <li><a href="#s-problem"><span>1</span>해결하고 싶은 문제와 사용자</a></li>
+        <li><a href="#s02"><span>2</span>2050년에 달라질 미래의 모습</a></li>
+        <li><a href="#s04"><span>3</span>이를 가능하게 하는 AI SW 기술</a></li>
+        <li><a href="#s06"><span>4</span>기술적 한계와 앞으로 검증할 질문</a></li>
+      </ol>
     </div>
     <p class="hero__hint" aria-hidden="true">스크롤하거나 <kbd>→</kbd> / <kbd>Space</kbd> 키로 넘겨 보세요</p>
   </header>
@@ -36,11 +42,71 @@
       </div>
     </section>
 
-    <!-- ===================== 02 하루 ===================== -->
+    <!-- ===================== 02 문제와 사용자 ===================== -->
+    <section class="sec sec--problem" id="s-problem" aria-labelledby="h-problem">
+      <div class="wrap">
+        <div class="stop" id="s-problem-head">
+          <h2 class="sec__title" id="h-problem"><span class="sec__num">02</span>문제와 사용자<span class="sec__point">핵심 1</span></h2>
+          <p class="sec__lead">지금의 스마트홈은 <b>'똑똑한 리모컨'</b>에 가깝다. 기기는 연결됐지만, 무엇을 언제 할지는 여전히 사람이 정하고 지시한다.</p>
+
+          <ol class="problems">
+            <li class="problem">
+              <img src="images/before-0700.jpg" alt="" width="2250" height="514" loading="lazy">
+              <div class="problem__body">
+                <p class="problem__no">문제 1</p>
+                <h3>반복 조작의 피로</h3>
+                <p>알람 끄기, 커튼·조명, 커피머신까지 매일 같은 일을 앱·음성·버튼으로 <b>하나씩 직접 지시</b>해야 한다.</p>
+              </div>
+            </li>
+            <li class="problem">
+              <img src="images/before-1400.jpg" alt="" width="2250" height="514" loading="lazy">
+              <div class="problem__body">
+                <p class="problem__no">문제 2</p>
+                <h3>상황을 모르는 예약 자동화</h3>
+                <p>예약은 시간만 안다. 사람이 쉬고 있어도 청소기는 <b>정해진 시간에 그대로</b> 돌아간다.</p>
+              </div>
+            </li>
+            <li class="problem">
+              <img src="images/before-1840.jpg" alt="" width="2250" height="514" loading="lazy">
+              <div class="problem__body">
+                <p class="problem__no">문제 3</p>
+                <h3>놓치는 낭비와 위험</h3>
+                <p>켜 두고 나온 조명·냉난방, 데워지길 기다리며 흘려보내는 물. 집은 <b>알아도 먼저 움직이지 않는다.</b></p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="users" id="s-users">
+          <article class="persona">
+            <img src="images/zerocall-0830.jpg" alt="가방을 메고 현관을 나서는 30대 직장인" width="2250" height="514" loading="lazy">
+            <div class="persona__body">
+              <p class="persona__tag">주 사용자</p>
+              <h3>혼자 사는 30대 직장인</h3>
+              <ul>
+                <li><b>하루</b> 아침엔 출근 준비에 쫓기고, 저녁엔 지친 채 귀가한다.</li>
+                <li><b>불편</b> 나간 뒤에도 "끄고 나왔나?" 걱정하고, 집에 오면 다시 하나씩 맞춘다.</li>
+                <li><b>바람</b> 시키지 않아도 내 생활에 맞춰 준비돼 있는 집.</li>
+              </ul>
+            </div>
+          </article>
+          <div class="users__more">
+            <p class="users__label">함께 도움받는 사용자</p>
+            <ul class="users__list">
+              <li><b>맞벌이·육아 가구</b><span>챙길 일이 많아 집안 조작까지 신경 쓸 여유가 없다</span></li>
+              <li><b>고령자</b><span>앱·음성 명령이 어렵고, 가스·누수 같은 위험을 늦게 알아챈다</span></li>
+              <li><b>반려동물 가구</b><span>집을 비운 동안에도 반려동물을 고려해 기기가 움직여야 한다</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 하루 ===================== -->
     <section class="sec sec--day" id="s02" aria-labelledby="h02">
       <div class="wrap">
         <div class="stop stop--head" id="s02-head">
-          <h2 class="sec__title" id="h02"><span class="sec__num">02</span>2050년, 가정 AI와 함께하는 하루</h2>
+          <h2 class="sec__title" id="h02"><span class="sec__num">03</span>2050년, 가정 AI와 함께하는 하루<span class="sec__point">핵심 2</span></h2>
           <div class="day__labels" aria-hidden="true">
             <p class="day__label day__label--before">기존 : 내가 말하고 조작해야 움직이는 집</p>
             <p class="day__label day__label--zc">Zero-Call : 먼저 읽고 준비하는 집</p>
@@ -48,7 +114,7 @@
         </div>
 
         <ol class="day">
-          <li class="day__row stop">
+          <li class="day__row stop" data-pair>
             <article class="scene scene--before">
               <img src="images/before-0700.jpg" alt="알람 소리에 괴로워하며 손을 뻗어 알람을 끄는 사람" width="2250" height="514">
               <div class="scene__text">
@@ -67,7 +133,7 @@
             </article>
           </li>
 
-          <li class="day__row stop">
+          <li class="day__row">
             <article class="scene scene--before">
               <img src="images/before-0730.jpg" alt="커피머신 버튼을 직접 누르며 서두르는 사람" width="2250" height="514">
               <div class="scene__text">
@@ -86,7 +152,7 @@
             </article>
           </li>
 
-          <li class="day__row stop">
+          <li class="day__row stop" data-pair>
             <article class="scene scene--before">
               <img src="images/before-0830.jpg" alt="가방을 멘 채 벽의 스위치를 하나씩 끄는 사람" width="2250" height="514">
               <div class="scene__text">
@@ -105,7 +171,7 @@
             </article>
           </li>
 
-          <li class="day__row stop">
+          <li class="day__row">
             <article class="scene scene--before">
               <img src="images/before-1400.jpg" alt="청소기를 직접 밀며 청소하는 사람" width="2250" height="514">
               <div class="scene__text">
@@ -124,7 +190,7 @@
             </article>
           </li>
 
-          <li class="day__row stop">
+          <li class="day__row stop" data-pair>
             <article class="scene scene--before">
               <img src="images/before-1840.jpg" alt="수건을 든 채 온수기 버튼을 누르며 기다리는 사람" width="2250" height="514">
               <div class="scene__text">
@@ -143,7 +209,7 @@
             </article>
           </li>
 
-          <li class="day__row stop">
+          <li class="day__row">
             <article class="scene scene--before">
               <img src="images/before-2200.jpg" alt="소파에 누워 지친 표정으로 조명을 직접 조작하는 사람" width="2250" height="514">
               <div class="scene__text">
@@ -167,19 +233,48 @@
       </div>
     </section>
 
-    <!-- ===================== 03 작동 원리 · 04 기대 효과 ===================== -->
-    <section class="sec sec--bottom stop" id="s03" aria-label="작동 원리와 기대 효과">
-      <div class="wrap bottom">
-        <div class="bottom__how">
-          <h2 class="sec__title"><span class="sec__num">03</span>작동 원리</h2>
+    <!-- ===================== 04 작동 원리와 AI SW 기술 ===================== -->
+    <section class="sec sec--tech stop" id="s04" aria-labelledby="h04">
+      <div class="wrap">
+        <h2 class="sec__title" id="h04"><span class="sec__num">04</span>작동 원리와 AI SW 기술<span class="sec__point">핵심 3</span></h2>
+        <p class="sec__lead"><b>보고 → 이해하고 → 확인하고 → 움직이며 다시 배운다.</b> 네 단계마다 이를 가능하게 하는 AI SW 기술이 있다.</p>
+        <div class="tech">
           <figure class="how">
             <img src="images/how-it-works.jpg" width="1024" height="657"
                  alt="작동 원리 4단계 순환도: 1 센서 감지(센서가 일상 속 움직임을 포착) → 2 생활 패턴·의도 추론(일상의 흐름과 패턴 분석 및 예측) → 3 동의·안전 규칙 확인(사용자 동의 및 안전성 검증) → 4 IoT 제어 및 학습(필요한 순간 가전 제어 및 피드백 학습) → 피드백으로 다시 1단계">
           </figure>
+          <ol class="techs">
+            <li>
+              <p class="techs__step">센서 감지</p>
+              <h3>센서 데이터 융합 · 재실 감지</h3>
+              <p>움직임·문 열림·온습도·전력 사용량 센서를 합쳐 <b>카메라 없이</b> 누가 어디서 무엇을 하는지 파악</p>
+            </li>
+            <li>
+              <p class="techs__step">생활 패턴·의도 추론</p>
+              <h3>시계열 딥러닝 · 행동 예측</h3>
+              <p>하루 생활 기록을 시간 순서로 학습해 <b>다음 행동을 확률로 예측</b> (예: 귀가 시간 + 욕실 접근 → 샤워 의도)</p>
+            </li>
+            <li>
+              <p class="techs__step">동의·안전 규칙 확인</p>
+              <h3>확신도 기반 판단 · 안전 규칙 엔진</h3>
+              <p>확신이 높을 때만 실행, 낮으면 먼저 제안. <b>동의 범위와 안전 규칙을 AI보다 먼저</b> 검사</p>
+            </li>
+            <li>
+              <p class="techs__step">IoT 제어 및 학습</p>
+              <h3>IoT 표준 연동 · 피드백 학습</h3>
+              <p>공통 표준(Matter)으로 여러 회사 가전을 제어하고, 사용자가 <b>취소·수정한 기록을 다시 학습</b></p>
+            </li>
+          </ol>
         </div>
+        <p class="tech__note"><b>엣지 AI</b> 모든 학습과 판단은 집 안 허브에서 처리해, 생활 데이터가 집 밖으로 나가지 않는다.</p>
+      </div>
+    </section>
 
-        <div class="bottom__effect" id="s04">
-          <h2 class="sec__title"><span class="sec__num">04</span>기대 효과</h2>
+    <!-- ===================== 05 기대 효과 ===================== -->
+    <section class="sec sec--effect stop" id="s05" aria-labelledby="h05">
+      <div class="wrap">
+        <div class="bottom__effect">
+          <h2 class="sec__title" id="h05"><span class="sec__num">05</span>기대 효과</h2>
           <p class="effect__lead"><b>기대 효과:</b> 모두에게 같은 자동화가 아니라, 쓸수록 내 생활에 맞춰지는 집. 조작과 기다림도 함께 줄어든다.</p>
 
           <div class="cards">
@@ -235,11 +330,79 @@
         </div>
       </div>
     </section>
+
+    <!-- ===================== 06 검증 질문 및 해결 과제 ===================== -->
+    <section class="sec sec--verify stop" id="s06" aria-labelledby="h06">
+      <div class="wrap">
+        <div id="s06-head">
+          <h2 class="sec__title" id="h06"><span class="sec__num">06</span>검증 질문 및 해결 과제<span class="sec__point">핵심 4</span></h2>
+          <p class="sec__lead">제로콜은 아직 <b>구현 및 성능 검증 전</b>의 개념 제안이다. 실제로 쓰이려면 넘어야 할 기술적 한계와, 앞으로 답해야 할 질문이 있다.</p>
+        </div>
+
+        <div class="verify">
+          <div class="verify__col" id="s06-limits">
+            <h3 class="verify__title">기술적 한계와 해결 방향</h3>
+            <ol class="limits">
+              <li>
+                <p class="limit__q"><b>의도 추론은 틀릴 수 있다</b>주말·야근·몸이 아픈 날처럼 생활 패턴은 매일 같지 않다.</p>
+                <p class="limit__a">확신이 낮으면 바로 실행하지 않고 <b>먼저 제안</b>하며, 이탈이 감지되면 즉시 중단·취소한다.</p>
+              </li>
+              <li>
+                <p class="limit__q"><b>생활 패턴은 민감한 개인정보다</b>언제 자고, 나가고, 씻는지가 모두 기록된다.</p>
+                <p class="limit__a">카메라 대신 재실·움직임 센서를 쓰고, 데이터는 <b>집 안 허브에서 처리</b>하며 사용자 동의 범위 안에서만 학습한다.</p>
+              </li>
+              <li>
+                <p class="limit__q"><b>스스로 움직이는 기기는 위험할 수 있다</b>물·열·가스를 다루는 가전이 사람 없이 동작한다.</p>
+                <p class="limit__a">AI보다 우선하는 <b>안전 규칙</b>을 둔다. 예: 온수는 예열만 하고 수도는 열지 않음.</p>
+              </li>
+              <li>
+                <p class="limit__q"><b>처음에는 배울 패턴이 없다</b>여러 명이 사는 집에서는 누구의 패턴인지도 구분해야 한다.</p>
+                <p class="limit__a">초기에는 기본 시나리오로 시작해 <b>피드백으로 점점 맞춰 가고</b>, 구성원별 패턴을 나눠 학습한다.</p>
+              </li>
+              <li>
+                <p class="limit__q"><b>제조사마다 기기 연결 방식이 다르다</b>모든 가전을 하나로 제어하기 어렵다.</p>
+                <p class="limit__a">공통 IoT 연결 표준(예: Matter)을 지원하는 기기부터 연동한다.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="verify__col" id="s06-questions">
+            <h3 class="verify__title">앞으로 검증할 질문</h3>
+            <ol class="questions">
+              <li>
+                <p class="q__q">예측이 얼마나 맞아야 사용자가 '편하다'고 느낄까?</p>
+                <p class="q__how">검증 방법 · 실제 생활 기록으로 예측 정확도와 사용자가 취소·수정한 비율 측정</p>
+              </li>
+              <li>
+                <p class="q__q">에너지 −22%, 감지 시간 −98%는 실제로도 가능할까?</p>
+                <p class="q__how">검증 방법 · 지금 수치는 예시 데이터 → 실제 가구에서 도입 전후 전력 사용량과 감지 시간 비교</p>
+              </li>
+              <li>
+                <p class="q__q">사용자는 어디까지 AI에게 맡기고 싶어 할까?</p>
+                <p class="q__how">검증 방법 · 기능별 '자동 실행 / 먼저 묻기 / 맡기지 않기' 선호를 설문·인터뷰로 조사</p>
+              </li>
+              <li>
+                <p class="q__q">여러 명이 함께 사는 집에서는 누구에게 맞춰야 할까?</p>
+                <p class="q__how">검증 방법 · 가족 구성원의 패턴이 부딪히는 상황을 모아 우선순위 규칙 시험</p>
+              </li>
+              <li>
+                <p class="q__q">카메라 없이 센서만으로 사생활 걱정을 충분히 줄일 수 있을까?</p>
+                <p class="q__how">검증 방법 · 수집 데이터 종류별 사용자 수용도 조사와 센서만 쓴 경우의 예측 성능 비교</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ===================== FOOTER (팀 정보) ===================== -->
   <footer class="foot stop" id="team">
     <div class="wrap">
+      <div class="closing">
+        <p class="closing__line">내 하루를 배워, 나에게 맞게 움직이는 집.</p>
+        <p class="closing__brand">Zero-Call<span>감사합니다</span></p>
+      </div>
       <p class="foot__team"><b>팀 E26-AI01-19</b><span class="bar">|</span><b>역할:</b></p>
       <ul class="foot__members">
         <li><b>20235275 이창민</b>발표, 웹페이지 제작</li>

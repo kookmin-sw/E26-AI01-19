@@ -130,7 +130,7 @@
 
   /* ---------- 등장 효과 & 숫자 카운트업 ---------- */
   var revealTargets = document.querySelectorAll(
-    '.sec__title, .intro__q, .intro__body, .day__labels, .scene, .day__tagline, .how, .effect__lead, .card, .foot .wrap'
+    '.sec__title, .sec__lead, .intro__q, .intro__body, .problem, .persona, .users__more, .day__labels, .scene, .day__tagline, .how, .techs, .tech__note, .effect__lead, .card, .verify__col, .closing, .foot__team'
   );
   function countUp(node) {
     var to = +node.getAttribute('data-count');
@@ -185,15 +185,30 @@
     document.body.classList.toggle('presenting', !!isRow);
     document.querySelectorAll('.day__row.is-active').forEach(function (r) { r.classList.remove('is-active'); });
     if (isRow) {
-      target.classList.add('is-active');
-      target.querySelectorAll('.scene').forEach(function (s) { s.classList.add('in'); });
+      groupOf(target).forEach(function (r) {
+        r.classList.add('is-active');
+        r.querySelectorAll('.scene').forEach(function (s) { s.classList.add('in'); });
+      });
     }
+  }
+  /* data-pair 행은 다음 행과 묶어서 두 줄씩 넘김 */
+  function groupOf(row) {
+    var g = [row];
+    if (row.hasAttribute('data-pair') && row.nextElementSibling) g.push(row.nextElementSibling);
+    return g;
   }
   function go(i) {
     cur = Math.max(0, Math.min(stops.length - 1, i));
     var s = stops[cur];
     var isRow = s.classList.contains('day__row');
-    s.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: isRow ? 'center' : 'start' });
+    var behavior = reduce ? 'auto' : 'smooth';
+    if (isRow) {
+      var g = groupOf(s);
+      var top = g[0].getBoundingClientRect().top, bottom = g[g.length - 1].getBoundingClientRect().bottom;
+      window.scrollTo({ top: window.scrollY + (top + bottom) / 2 - window.innerHeight / 2, behavior: behavior });
+    } else {
+      s.scrollIntoView({ behavior: behavior, block: 'start' });
+    }
     setActiveRow(s);
     clearTimeout(navLock);
     navLock = setTimeout(function () { navLock = null; }, 900);
